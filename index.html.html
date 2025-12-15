@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Diksha Gaikwad | Portfolio</title>
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card: #111827;
+      --accent: #38bdf8;
+      --text: #e5e7eb;
+      --muted: #9ca3af;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', sans-serif; }
+    body { background: var(--bg); color: var(--text); min-height: 100vh; display: flex; justify-content: center; align-items: center; padding: 20px; }
+    .container { display: grid; grid-template-columns: 320px 1fr; gap: 20px; max-width: 1100px; width: 100%; }
+    .card { background: var(--card); border-radius: 20px; padding: 25px; box-shadow: 0 10px 30px rgba(0,0,0,0.4); }
+    .profile { text-align: center; }
+    .avatar { width: 120px; height: 120px; border-radius: 50%; background: linear-gradient(135deg, var(--accent), #0ea5e9); display: flex; align-items: center; justify-content: center; font-size: 40px; margin: auto; }
+    .profile h1 { margin-top: 15px; font-size: 22px; }
+    .profile p { color: var(--muted); margin-top: 5px; }
+    .info { margin-top: 20px; text-align: left; }
+    .info p { font-size: 14px; margin: 8px 0; }
+    .tabs { display: flex; gap: 15px; margin-bottom: 20px; flex-wrap: wrap; }
+    .tabs button { background: transparent; border: none; color: var(--muted); font-size: 15px; cursor: pointer; padding-bottom: 5px; }
+    .tabs button.active { color: var(--accent); border-bottom: 2px solid var(--accent); }
+    .content { display: none; }
+    .content.active { display: block; }
+    h2 { margin-bottom: 15px; }
+    .project { margin-bottom: 15px; }
+    .skill-bar { margin-bottom: 12px; }
+    .skill-bar label { display: block; font-size: 14px; margin-bottom: 4px; }
+    .bar { background: #1f2937; border-radius: 10px; overflow: hidden; }
+    .bar span { display: block; background: var(--accent); padding: 4px 8px; font-size: 12px; text-align: right; }
+    @media (max-width: 900px) {
+      body { align-items: flex-start; }
+      .container { grid-template-columns: 1fr; }
+      .profile { order: -1; }
+    }
+    @media (max-width: 480px) {
+      .avatar { width: 90px; height: 90px; font-size: 30px; }
+      .card { padding: 18px; border-radius: 16px; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <!-- Left Profile Card -->
+  <div class="card profile">
+    <div class="avatar">DG</div>
+    <h1>Diksha Gaikwad</h1>
+    <p>MCA Student</p>
+
+    <div class="info">
+      <p><strong>Email:</strong> dikshagaikwad9123@gmail.com</p>
+      <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/diksha-gaikwad" target="_blank">linkedin.com/in/diksaha gaikwad</a></p>
+      <p><strong>GitHub:</strong> <a href="https://github.com/diksha-gaikwad" target="_blank">github.com/diksha-gaikwad</a></p>
+      <p><strong>Location:Pune </strong> India</p>
+    </div>
+  </div>
+
+  <!-- Right Content Card -->
+  <div class="card">
+    <div class="tabs">
+      <button class="active" onclick="openTab('about')">About</button>
+      <button onclick="openTab('skills')">Skills</button>
+      <button onclick="openTab('projects')">Projects</button>
+      <button onclick="openTab('education')">Education</button>
+    </div>
+
+    <div id="about" class="content active">
+      <h2>About Me</h2>
+      <p>I am a motivated MCA student with a strong foundation in computer science and hands-on experience in Java, Python, web development, and database management. I have worked on full-stack and machine learning–based projects, including an Airline Reservation System and a Diabetes Prediction System, which helped me develop practical skills in problem-solving, clean coding, and system design. I am passionate about learning new technologies, building user-friendly applications, and applying my knowledge in real-world projects through internships and industry opportunities.</p>
+    </div>
+
+    <div id="skills" class="content">
+      <h2>Technical Skills</h2>
+      <p><strong>Programming Languages:</strong> Java, Python</p>
+      <p><strong>Front-end:</strong> HTML, CSS, JavaScript</p>
+      <p><strong>Databases:</strong> MySQL, Linux</p>
+      <p><strong>Tools & Platforms:</strong> AWS</p>
+      <p><strong>Dev Tools:</strong> Visual Studio, PyCharm, Windows, Ubuntu</p>
+
+      <h2 style="margin-top:20px;">Skill Proficiency</h2>
+      <div class="skill-bar">
+        <label>Web Design</label>
+        <div class="bar"><span style="width:80%">80%</span></div>
+      </div>
+      <div class="skill-bar">
+        <label>Graphic Design</label>
+        <div class="bar"><span style="width:70%">70%</span></div>
+      </div>
+      <div class="skill-bar">
+        <label>Branding</label>
+        <div class="bar"><span style="width:90%">90%</span></div>
+      </div>
+      <div class="skill-bar">
+        <label>WordPress</label>
+        <div class="bar"><span style="width:50%">50%</span></div>
+      </div>
+
+      <h2 style="margin-top:20px;">Certifications</h2>
+      <ul>
+        <li>Great Learning – Data Structures and Algorithms (DSA)</li>
+        <li>HackerRank – Basic SQL</li>
+        <li>IIT Bombay Spoken Tutorial – Python, HTML, RDBMS, Java, Git, Bootstrap</li>
+      </ul>
+
+      <h2 style="margin-top:20px;">Achievements</h2>
+      <ul>
+        <li>Appeared for the Electronic Excellence Exam during B.Sc. (Computer Science).</li>
+      </ul>
+
+      <h2 style="margin-top:20px;">Paper Publication</h2>
+      <p><strong>“Diabetes Prediction Using Machine Learning Algorithms”</strong></p>
+      <p>International Journal of Progressive Research in Engineering Management and Science (IJPREMS)</p>
+      <p>Volume 05, Issue 10, October 2025</p>
+      <p>DOI: 10.58257/IJPREMS44446</p>
+    </div>
+
+    <div id="projects" class="content">
+      <h2>Projects</h2>
+
+      <div class="project">
+        <strong>Airline Reservation System</strong><br>
+        <small>Java, Spring Boot, MySQL | June 2024 – 2026</small>
+        <ul>
+          <li>Developed a full-stack web application for flight search, booking, and admin management.</li>
+          <li>Implemented secure authentication and role-based access using Spring Security.</li>
+          <li>Designed responsive UI using Thymeleaf.</li>
+          <li>Integrated Spring Data JPA with MySQL for efficient data handling.</li>
+          <li>Followed MVC architecture for clean and maintainable code.</li>
+        </ul>
+      </div>
+
+      <div class="project">
+        <strong>Diabetes Prediction System using Machine Learning</strong><br>
+        <small>Python, Flask, Pandas, NumPy, Scikit-learn</small>
+        <ul>
+          <li>Built a predictive system to identify diabetes risk using health parameters.</li>
+          <li>Performed data preprocessing, feature selection, and EDA.</li>
+          <li>Implemented Logistic Regression and Random Forest models.</li>
+          <li>Evaluated models using accuracy, precision, recall, and F1-score.</li>
+        </ul>
+      </div>
+
+      <div class="project">
+        <strong>Stadium Ticket Booking System</strong><br>
+        <small>Python, Django, SQL, HTML, CSS, JavaScript</small>
+        <ul>
+          <li>Web-based application for browsing events, selecting seats, and booking tickets.</li>
+          <li>Supports secure user authentication and real-time seat availability.</li>
+          <li>Includes admin panel for managing events and bookings.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="education" class="content">
+      <h2>Education</h2>
+      <p><strong>MCA</strong> – Pursuing (2nd Year)</p>
+      <p><strong>BSc Computer Science</strong> </p>
+    </div>
+  </div>
+</div>
+
+<script>
+  function openTab(tabId) {
+    document.querySelectorAll('.tabs button').forEach(btn => btn.classList.remove('active'));
+    document.querySelectorAll('.content').forEach(c => c.classList.remove('active'));
+    event.target.classList.add('active');
+    document.getElementById(tabId).classList.add('active');
+  }
+</script>
+
+</body>
+</html>
