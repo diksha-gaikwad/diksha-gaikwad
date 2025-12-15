@@ -1,6 +1,7 @@
 ## Hi there 👋 I'm Diksha Gaikwad
 
-🎓 MCA Student | 💻 Aspiring Software Developer  
+🎓 MCA Student | 💻 Aspiring Software Developer 
+![Visitor Count](https://visitor-badge.laobi.icu/badge?page_id=diksha-gaikwad)
 
 I am a motivated MCA student with a strong foundation in computer science and hands-on experience in **Java, Python, web development, and database management**. I enjoy building real-world applications and learning new technologies through projects and internships.
 
