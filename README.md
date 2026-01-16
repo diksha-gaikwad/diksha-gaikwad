@@ -40,7 +40,7 @@ International Journal of Progressive Research in Engineering Management and Scie
 ---
 
 ### 📫 Connect With Me
-- 🌐 Portfolio: https://diksha-gaikwad.github.io  
+- 🌐 Portfolio:https://github.com/diksha-gaikwad/diksha-gaikwad 
 - 💼 LinkedIn: https://www.linkedin.com/in/diksha-gaikwad 
 - 🧑‍💻 GitHub: https://github.com/diksha-gaikwad  
 - ✉️ Email: dikshagaikwad9123@gmail.com
