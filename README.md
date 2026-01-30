@@ -9,6 +9,7 @@ I am an MCA student with a strong foundation in computer science and hands-on ex
 
 ### 🌱 Currently Learning
 - Advanced **Spring Boot & REST APIs**
+- Python
 
 
 ---
